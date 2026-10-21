@@ -62,7 +62,7 @@
                 <img class="dark:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
                 <img class="hidden dark:block h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
             </div>
-            <img class="block [.sidebar-expanded_&]:hidden" src="/images/logo/logo-icon.svg" alt="Logo" width="32" height="32" />
+            <img class="block [.sidebar-expanded_&]:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
         </a>
     </div>
 
