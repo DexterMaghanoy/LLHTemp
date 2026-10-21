@@ -1,14 +1,20 @@
 @props([
     'title',
     'desc' => '',
+    'actionButton' => null,
 ])
 
 <div {{ $attributes->merge(['class' => 'rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]']) }}>
     <!-- Card Header -->
-    <div class="px-6 py-5">
+    <div class="px-6 py-5 flex items-center justify-between">
         <h3 class="text-base font-medium text-gray-800 dark:text-white/90">
             {{ $title }}
         </h3>
+        @if($actionButton)
+            <div class="flex items-center gap-2">
+                {!! $actionButton !!}
+            </div>
+        @endif
         @if($desc)
             <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 {{ $desc }}

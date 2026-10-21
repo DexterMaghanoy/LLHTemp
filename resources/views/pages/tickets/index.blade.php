@@ -4,7 +4,7 @@
     <x-common.page-breadcrumb pageTitle="Tickets" />
 
     <div class="space-y-6">
-        <x-common.component-card title="All Tickets" desc="Manage hotel support tickets.">
+        <x-common.component-card title="All Tickets" actionButton="<a href='{{ route('tickets.create') }}' class='bg-brand-500 shadow-theme-xs hover:bg-brand-600 inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-medium text-white transition'>+ New Ticket</a>">
             <form method="GET" action="{{ route('tickets.index') }}" class="grid grid-cols-1 gap-4 md:grid-cols-5">
                 <input type="text" name="search" value="{{ request('search') }}" placeholder="Search subject or number"
                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
@@ -71,9 +71,8 @@
             <div class="mt-4">{{ $tickets->links() }}</div>
         </x-common.component-card>
 
-        <div class="flex justify-end">
-            <a href="{{ route('tickets.create') }}" class="bg-brand-500 shadow-theme-xs hover:bg-brand-600 inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-medium text-white transition">New Ticket</a>
-        </div>
+
+        
     </div>
 @endsection
 
