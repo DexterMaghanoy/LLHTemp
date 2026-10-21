@@ -58,12 +58,12 @@
     <!-- Logo Section -->
     <div class="pt-8 pb-7 flex items-center gap-2" :class="(!$store.sidebar.isExpanded && !$store.sidebar.isHovered && !$store.sidebar.isMobileOpen) ? 'justify-center' : 'justify-between'">
         <a href="/">
-            <div x-show="$store.sidebar.isExpanded || $store.sidebar.isHovered || $store.sidebar.isMobileOpen" x-cloak class="flex items-center gap-3">
-                <img class="dark:hidden h-8 w-auto shrink-0" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
-                <img class="hidden dark:block h-8 w-auto shrink-0" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
-                <span class="text-base font-semibold text-gray-800 dark:text-white/90 whitespace-nowrap leading-tight">Limketkai Luxe Hotel</span>
+            <div class="hidden [.sidebar-expanded_&]:block">
+                <img class="dark:hidden h-8 w-auto inline-block align-middle" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
+                <img class="hidden dark:inline-block h-8 w-auto align-middle" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
+                <span class="ms-2 text-base font-semibold text-gray-800 dark:text-white/90 whitespace-nowrap align-middle leading-tight">Limketkai Luxe Hotel</span>
             </div>
-            <img x-show="!($store.sidebar.isExpanded || $store.sidebar.isHovered || $store.sidebar.isMobileOpen)" x-cloak class="h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
+            <img class="block [.sidebar-expanded_&]:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
         </a>
     </div>
 
