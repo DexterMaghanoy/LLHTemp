@@ -46,7 +46,7 @@
         $period = $period ?? 'daily';
         $rangeStart = $rangeStart ?? now()->startOfDay();
         $rangeEnd = $rangeEnd ?? now()->endOfDay();
-        $departments = $departments ?? \\App\\Models\\Department::orderBy('name')->get();
+        $departments = $departments ?? \App\Models\Department::orderBy('name')->get();
     @endphp
         @foreach (['daily' => 'Daily', 'weekly' => 'Weekly', 'monthly' => 'Monthly'] as $key => $label)
             <a href="{{ route('dashboard', ['period' => $key]) }}"
