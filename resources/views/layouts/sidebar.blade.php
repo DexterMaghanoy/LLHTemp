@@ -59,8 +59,8 @@
     <div class="pt-8 pb-7 flex items-center gap-2" :class="(!$store.sidebar.isExpanded && !$store.sidebar.isHovered && !$store.sidebar.isMobileOpen) ? 'justify-center' : 'justify-between'">
         <a href="/">
             <div class="hidden [.sidebar-expanded_&]:block">
-                <img class="dark:hidden" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="150" height="40" />
-                <img class="hidden dark:block" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="150" height="40" />
+                <img class="dark:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
+                <img class="hidden dark:block h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
             </div>
             <img class="block [.sidebar-expanded_&]:hidden" src="/images/logo/logo-icon.svg" alt="Logo" width="32" height="32" />
         </a>
