@@ -5,7 +5,7 @@
                 First Name
             </p>
             <p class="text-sm font-medium text-gray-800 dark:text-white/90">
-                Chowdury
+                {{ auth()->user()->name ?? 'User' }}
             </p>
         </div>
 
@@ -14,7 +14,7 @@
                 Last Name
             </p>
             <p class="text-sm font-medium text-gray-800 dark:text-white/90">
-                Musharof
+                &mdash;
             </p>
         </div>
 
@@ -23,7 +23,7 @@
                 Email address
             </p>
             <p class="text-sm font-medium text-gray-800 dark:text-white/90">
-                randomuser@pimjo.com
+                {{ auth()->user()->email ?? '' }}
             </p>
         </div>
 

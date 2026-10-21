@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="text-start">
                                     <h4 class="mb-2 text-lg font-semibold text-gray-800 dark:text-white/90">
-                                        Musharof Chowdhury
+                                        {{ auth()->user()->name ?? 'User' }}
                                     </h4>
                                     <div class="flex items-center gap-1 sm:gap-3">
                                         <p class="text-sm text-gray-500 dark:text-gray-400">
@@ -49,7 +49,7 @@
                                     Last Name
                                 </p>
                                 <p class="text-sm font-medium text-gray-800 dark:text-white/90">
-                                    Musharof
+                                    &mdash;
                                 </p>
                             </div>
                             <div class="hidden xl:block"></div>
@@ -59,7 +59,7 @@
                                     Email address
                                 </p>
                                 <p class="text-sm font-medium text-gray-800 dark:text-white/90">
-                                    randomuser@pimjo.com
+                                    {{ auth()->user()->email ?? '' }}
                                 </p>
                             </div>
                             <div>
@@ -375,7 +375,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     First Name
                                 </label>
-                                <input type="text" value="Musharof"
+                                <input type="text" value="{{ auth()->user()->name ?? '' }}"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
 
@@ -391,7 +391,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     Email address
                                 </label>
-                                <input type="text" value="randomuser@pimjo.com"
+                                <input type="text" value="{{ auth()->user()->email ?? '' }}"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
 
@@ -422,7 +422,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     Facebook
                                 </label>
-                                <input type="text" value="https://www.facebook.com/PimjoHQ"
+                                <input type="text" value="https://www.facebook.com/LLH"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
 
@@ -430,7 +430,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     X.com
                                 </label>
-                                <input type="text" value="https://x.com/PimjoHQ"
+                                <input type="text" value="https://x.com/LLH"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
 
@@ -438,7 +438,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     Linkedin
                                 </label>
-                                <input type="text" value="https://linkedin.com/PimjoHQ"
+                                <input type="text" value="https://linkedin.com/LLH"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
 
@@ -446,7 +446,7 @@
                                 <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
                                     Instagram
                                 </label>
-                                <input type="text" value="https://instagram.com/PimjoHQ"
+                                <input type="text" value="https://instagram.com/LLH"
                                     class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
                         </div>

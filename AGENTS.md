@@ -1,4 +1,4 @@
-# AGENTS.md — TailAdmin Free Laravel
+# AGENTS.md — LLH Ticketing System
 
 > Free Laravel 12 admin dashboard template · RTL Layout Support · Tailwind CSS v4 · Blade Components · Alpine.js · Vite · ApexCharts · FullCalendar · Swiper · Flatpickr
 
@@ -21,7 +21,7 @@ resources/
 └── views/
     ├── components/           # Reusable Blade components (<x-ui.*>, <x-form.*>, <x-common.*>, etc.)
     │   ├── common/           # Shared page elements (page-breadcrumb, component-card, table-dropdown)
-    │   ├── ecommerce/        # Ecommerce dashboard widgets (metrics, monthly-target, recent-orders)
+    │   ├── (removed)         # Ecommerce dashboard widgets removed
     │   ├── form/             # Form controls (input, select, date-picker, dropzone)
     │   ├── header/           # Header widgets (user-dropdown, notification-dropdown)
     │   ├── profile/          # User profile cards (personal-info, profile-card, address-card)

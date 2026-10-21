@@ -116,7 +116,7 @@
                 class="absolute top-1/2 ltr:left-0 rtl:right-0 inline-flex h-11 -translate-y-1/2 items-center justify-center ltr:border-r rtl:border-l border-gray-200 py-3 ltr:pr-3 ltr:pl-3.5 rtl:pl-3 rtl:pr-3.5 text-gray-500 dark:border-gray-800 dark:text-gray-400">
                 http://
             </span>
-            <input type="url" placeholder="www.tailadmin.com"
+            <input type="url" placeholder="www.example.com"
                 class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 ltr:pl-[90px] rtl:pr-[90px] text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
         </div>
     </div>
@@ -137,7 +137,7 @@
                 </svg>
                 <div id="copy-text">Copy</div>
             </button>
-            <input value="www.tailadmin.com" type="url" id="website-input"
+            <input value="www.example.com" type="url" id="website-input"
                 class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-3 ltr:pr-[90px] ltr:pl-4 rtl:pl-[90px] rtl:pr-4 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
         </div>
     </div>

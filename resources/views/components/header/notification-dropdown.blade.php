@@ -126,7 +126,7 @@
                         'userName' => 'Mike Brown',
                         'userImage' => '/images/user/user-05.jpg',
                         'action' => 'requests permission to change',
-                        'project' => 'Project - E-commerce',
+                        'project' => 'Project - Ticketing',
                         'type' => 'Project',
                         'time' => '20 min ago',
                         'status' => 'online',
