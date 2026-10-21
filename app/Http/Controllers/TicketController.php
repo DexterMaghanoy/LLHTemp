@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
 
 class TicketController extends Controller
 {
+    public $openModal = false;
+
     public function index(Request $request)
     {
         $query = Ticket::with(['requester', 'assignee', 'department']);
@@ -20,7 +22,7 @@ class TicketController extends Controller
         }
         if ($request->filled('priority')) {
             $query->where('priority', $request->priority);
-        }
+        }   
         if ($request->filled('department_id')) {
             $query->where('department_id', $request->department_id);
         }
@@ -60,7 +62,7 @@ class TicketController extends Controller
             'description' => ['required', 'string'],
             'priority' => ['required', 'in:low,medium,high,urgent'],
             'category' => ['nullable', 'string', 'max:100'],
-            'department_id' => ['nullable', 'exists:departments,id'],
+            'department_id' => ['required', 'exists:departments,id'],
         ]);
 
         $ticket = Ticket::create([
@@ -105,7 +107,7 @@ class TicketController extends Controller
             'description' => ['required', 'string'],
             'priority' => ['required', 'in:low,medium,high,urgent'],
             'category' => ['nullable', 'string', 'max:100'],
-            'department_id' => ['nullable', 'exists:departments,id'],
+            'department_id' => ['required', 'exists:departments,id'],
             'assignee_id' => ['nullable', 'exists:users,id'],
             'status' => ['required', 'in:open,in_progress,pending,resolved,closed'],
         ]);

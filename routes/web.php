@@ -9,7 +9,7 @@ Route::post('/signin', [App\Http\Controllers\AuthController::class, 'login']);
 Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
 // Authenticated area
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('/', function (Illuminate\Http\Request $request) {
         $period = in_array($request->query('period'), ['daily', 'weekly', 'monthly'], true)
             ? $request->query('period')

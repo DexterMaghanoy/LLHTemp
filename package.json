@@ -11,12 +11,12 @@
         "build:watch": "vite build --watch"
     },
     "devDependencies": {
-        "@tailwindcss/vite": "^4.1.12",
+        "@tailwindcss/vite": "^4.3.3",
         "axios": "^1.11.0",
         "concurrently": "^9.0.1",
-        "laravel-vite-plugin": "^2.0.0",
+        "laravel-vite-plugin": "^2.1.0",
         "tailwindcss": "^4.1.12",
-        "vite": "^7.0.4"
+        "vite": "^7.3.7"
     },
     "dependencies": {
         "@floating-ui/dom": "^1.7.4",

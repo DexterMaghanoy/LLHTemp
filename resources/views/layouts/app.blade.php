@@ -92,7 +92,7 @@
                 toggleExpanded() {
                     this.isExpanded = !this.isExpanded;
                     this.isMobileOpen = false;
-                    
+
                     if (window.innerWidth >= 1280) {
                         localStorage.setItem('sidebarExpanded', this.isExpanded);
                     }
@@ -140,7 +140,7 @@
             }
         })();
     </script>
-    
+
 
 </head>
 
