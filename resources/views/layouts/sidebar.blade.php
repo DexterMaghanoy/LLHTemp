@@ -58,10 +58,9 @@
     <!-- Logo Section -->
     <div class="pt-8 pb-7 flex items-center gap-2" :class="(!$store.sidebar.isExpanded && !$store.sidebar.isHovered && !$store.sidebar.isMobileOpen) ? 'justify-center' : 'justify-between'">
         <a href="/">
-            <div class="hidden [.sidebar-expanded_&]:flex items-center gap-2">
+            <div class="hidden [.sidebar-expanded_&]:block">
                 <img class="dark:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
                 <img class="hidden dark:block h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
-                <span class="text-sm font-semibold text-gray-800 dark:text-white/90 whitespace-nowrap">Limketkai Luxe Hotel</span>
             </div>
             <img class="block [.sidebar-expanded_&]:hidden h-8 w-auto" src="/images/logo/LLH-LOGO.png" alt="LLH Logo" width="41" height="32" />
         </a>
