@@ -6,13 +6,16 @@ class MenuHelper
 {
     public static function getMainNavItems()
     {
-        return [
+        $items = [
             [
                 'icon' => 'dashboard',
                 'name' => 'Dashboard',
-                'subItems' => [
-                    ['name' => 'Ecommerce', 'path' => '/'],
-                ],
+                'path' => '/',
+            ],
+            [
+                'icon' => 'support-ticket',
+                'name' => 'Tickets',
+                'path' => '/tickets',
             ],
             [
                 'icon' => 'calendar',
@@ -47,6 +50,16 @@ class MenuHelper
                 ],
             ],
         ];
+
+        if (auth()->check() && auth()->user()->isAdmin()) {
+            $items[] = [
+                'icon' => 'user-profile',
+                'name' => 'Users',
+                'path' => '/users',
+            ];
+        }
+
+        return $items;
     }
 
     public static function getOthersItems()
@@ -77,7 +90,6 @@ class MenuHelper
                 'name' => 'Authentication',
                 'subItems' => [
                     ['name' => 'Sign In', 'path' => '/signin', 'pro' => false],
-                    ['name' => 'Sign Up', 'path' => '/signup', 'pro' => false],
                 ],
             ],
         ];
